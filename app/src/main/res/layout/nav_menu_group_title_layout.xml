@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <LinearLayout
+        android:background="@color/transparent60"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:text="Camera"
+            android:textColor="@color/transparent60"
+            android:layout_centerInParent="true"
+            android:paddingRight="6dp"
+            android:paddingLeft="0dp"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@+id/itemFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/itemFeed"
+            android:text="11"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:src="@drawable/ic_menu_share"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/update_bg"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

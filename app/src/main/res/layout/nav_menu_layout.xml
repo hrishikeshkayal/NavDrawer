@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/itemMainIcon"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_menu_camera"
+            android:layout_centerInParent="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:text="Camera"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:paddingRight="6dp"
+            android:paddingLeft="22dp"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@+id/itemMainIcon"
+            android:layout_toLeftOf="@+id/itemFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/itemFeed"
+            android:text="11"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:src="@drawable/ic_menu_share"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/update_bg"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
